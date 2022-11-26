@@ -1,27 +1,25 @@
-import React from "react";
+import logo from "./logo.svg";
 import "./App.css";
-import Bookings from "./Bookings";
-import Heading from "./Heading";
-import TouristInfoCards from "./TouristInfoCards";
-import Footer from "./Footer";
-import Restaurant from "./Restaurant";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
-      <Heading />
-      <TouristInfoCards />
-      <Bookings />
-      <Restaurant />
-      <Footer
-        footerText={[
-          "123 Fake Street, London, E1 4UD",
-          "hello@fakehotel.com",
-          "0123 456789",
-        ]}
-      />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
-};
+}
 
 export default App;
